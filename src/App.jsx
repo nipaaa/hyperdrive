@@ -1,4 +1,3 @@
-
 import "./App.css";
 import BrandSlider from "./components/BrandSlider";
 import Tracks from "./components/Tracks/Tracks";
@@ -10,16 +9,15 @@ import Banner from "./components/Banner";
 import KickStart from "./components/KickStart";
 import Prizes from "./components/Prizes";
 import dot from "./assets/footer_bg.png";
-import bannerVideo from "../src/assets/bacgroundVideo.mp4"
+import bannerVideo from "../src/assets/bacgroundVideo.mp4";
 
 const App = () => {
   return (
     <div>
-      <div className="bannerContainer" >
-       
-        <video loop autoPlay muted className='bannerVideo'>
-                    <source src={bannerVideo} type="video/mp4" />
-          </video>
+      <div className="bannerContainer">
+        <video loop autoPlay muted className="bannerVideo">
+          <source src={bannerVideo} type="video/mp4" />
+        </video>
         <Header />
         <Banner />
       </div>
